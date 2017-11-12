@@ -339,3 +339,5 @@ insert into Contains values(00000007, 00000002);
 insert into Contains values(00000008, 00000004);
 
 insert into Contains values(00000009, 00000007);
+
+commit work;

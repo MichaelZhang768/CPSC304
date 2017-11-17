@@ -1,3 +1,5 @@
+use cpsc304;
+
 insert into Store values(12222222);
 
 insert into Store values(12222223);
@@ -108,7 +110,7 @@ insert into Friend values(11111104, 11111105);
 
 insert into Friend values(11111102, 11111103);
 
-insert into Friend values(11111111, 11111102);
+insert into Friend values(11111111, 11111105);
 
 insert into Friend values(11111105, 11111121);
 
@@ -170,13 +172,13 @@ insert into Payment values(11111104, 00000003, 00000004, '2017-11-09', 29.00, "C
 
 insert into Payment values(11111104, 00000004, 00000005, '2017-05-23', 167.00, "Account Credit");
 
-insert into Payment values(11111105, 00000005, 00000000, '2017-05-31', 29.00, "Gift Card");
+insert into Payment values(11111105, 00000005, 00000006, '2017-05-31', 29.00, "Gift Card");
 
-insert into Payment values(11111106, 00000006, 00000000, '2017-02-09', 19.00, "Debit Card");
+insert into Payment values(11111106, 00000006, 00000007, '2017-02-09', 19.00, "Debit Card");
 
-insert into Payment values(11111107, 00000007, 00000000, '2017-10-23', 29.00, "Credit Card");
+insert into Payment values(11111107, 00000007, 00000008, '2017-10-23', 29.00, "Credit Card");
 
-insert into Payment values(11111102, 00000001, 00000000, '2017-09-09', 0.00, "Instant Noodles");
+insert into Payment values(11111102, 00000001, 00000009, '2017-09-09', 0.00, "Instant Noodles");
 
 insert into Developer values(00000000, "Electronic Smarts");
 
@@ -190,7 +192,7 @@ insert into Developer values(00000004, "Valve");
 
 insert into Developer values(00000005, "Hatcom");
 
-insert into Developer values(00000006, "Fish Games");	
+insert into Developer values(00000006, "Fish Games");
 
 insert into Developer values(00000007, "MICE");
 
@@ -236,7 +238,7 @@ insert into Genre values(00000007, "Strategy");
 
 insert into Genre values(00000008, "Fantasy");
 
-insert into Genre values(00000009, "Horror");	
+insert into Genre values(00000009, "Horror");
 
 insert into Has values(00000000, 00000003);
 

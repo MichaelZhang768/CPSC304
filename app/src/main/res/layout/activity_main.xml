@@ -10,8 +10,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ubc.cpsc304.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/signInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:onClick="signIn"
+        android:text="Sign In"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="signUp"
+        android:text="Sign Up"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/signInButton"
+        android:layout_alignStart="@+id/signInButton"/>
+
 </RelativeLayout>

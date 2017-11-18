@@ -15,6 +15,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SignInActivity"
+                  android:parentActivityName=".MainActivity"
+                  android:label="Sign In">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".SignUpActivity"
+                  android:parentActivityName=".MainActivity"
+                  android:label="Sign Up">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".AllGamesActivity"
+                  android:label="All Games">
+        </activity>
     </application>
 
 </manifest>

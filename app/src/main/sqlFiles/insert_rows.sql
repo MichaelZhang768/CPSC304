@@ -200,7 +200,7 @@ insert into Developer values(8, "Deactivision");
 
 insert into Developer values(9, "Mediocre Games");
 
-insert into Game values(, 59.00, 0, 12222222, "Connect 4");
+insert into Game values(0, 59.00, 0, 12222222, "Connect 4");
 
 insert into Game values(1, 69.00, 0, 12222222, "Connect 5");
 

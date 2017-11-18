@@ -140,206 +140,206 @@ insert into Manages values(11111112, 11111120);
 
 insert into Manages values(11111112, 11111121);
 
-insert into Cart values(00000000, 128.00);
+insert into Cart values(0, 128.00);
 
-insert into Cart values(00000001, 0.00);
+insert into Cart values(1, 0.00);
 
-insert into Cart values(00000002, 99.00);
+insert into Cart values(2, 99.00);
 
-insert into Cart values(00000003, 29.00);
+insert into Cart values(3, 29.00);
 
-insert into Cart values(00000004, 167.00);
+insert into Cart values(4, 167.00);
 
-insert into Cart values(00000005, 29.00);
+insert into Cart values(5, 29.00);
 
-insert into Cart values(00000006, 19.00);
+insert into Cart values(6, 19.00);
 
-insert into Cart values(00000007, 29.00);
+insert into Cart values(7, 29.00);
 
-insert into Cart values(00000008, 39.00);
+insert into Cart values(8, 39.00);
 
-insert into Cart values(00000009, 49.00);
+insert into Cart values(9, 49.00);
 
-insert into Payment values(11111102, 00000000, 00000000, '2017-11-10', 128.00, "Credit Card");
+insert into Payment values(11111102, 0, 0, '2017-11-10', 128.00, "Credit Card");
 
-insert into Payment values(11111102, 00000002, 00000001, '2017-11-09', 99.00, "PayPal");
+insert into Payment values(11111102, 2, 1, '2017-11-09', 99.00, "PayPal");
 
-insert into Payment values(11111103, 00000008, 00000002, '2001-09-11', 39.00, "Debit Card");
+insert into Payment values(11111103, 8, 2, '2001-09-11', 39.00, "Debit Card");
 
-insert into Payment values(11111103, 00000009, 00000003, '2017-11-09', 49.00, "PayPal");
+insert into Payment values(11111103, 9, 3, '2017-11-09', 49.00, "PayPal");
 
-insert into Payment values(11111104, 00000003, 00000004, '2017-11-09', 29.00, "Credit Card");
+insert into Payment values(11111104, 3, 4, '2017-11-09', 29.00, "Credit Card");
 
-insert into Payment values(11111104, 00000004, 00000005, '2017-05-23', 167.00, "Account Credit");
+insert into Payment values(11111104, 4, 5, '2017-05-23', 167.00, "Account Credit");
 
-insert into Payment values(11111105, 00000005, 00000006, '2017-05-31', 29.00, "Gift Card");
+insert into Payment values(11111105, 5, 6, '2017-05-31', 29.00, "Gift Card");
 
-insert into Payment values(11111106, 00000006, 00000007, '2017-02-09', 19.00, "Debit Card");
+insert into Payment values(11111106, 6, 7, '2017-02-09', 19.00, "Debit Card");
 
-insert into Payment values(11111107, 00000007, 00000008, '2017-10-23', 29.00, "Credit Card");
+insert into Payment values(11111107, 7, 8, '2017-10-23', 29.00, "Credit Card");
 
-insert into Payment values(11111102, 00000001, 00000009, '2017-09-09', 0.00, "Instant Noodles");
+insert into Payment values(11111102, 1, 9, '2017-09-09', 0.00, "Instant Noodles");
 
-insert into Developer values(00000000, "Electronic Smarts");
+insert into Developer values(0, "Electronic Smarts");
 
-insert into Developer values(00000001, "Many Thinking Apes");
+insert into Developer values(1, "Many Thinking Apes");
 
-insert into Developer values(00000002, "Macrosoft Studios");
+insert into Developer values(2, "Macrosoft Studios");
 
-insert into Developer values(00000003, "Rito Games");
+insert into Developer values(3, "Rito Games");
 
-insert into Developer values(00000004, "Valve");
+insert into Developer values(4, "Valve");
 
-insert into Developer values(00000005, "Hatcom");
+insert into Developer values(5, "Hatcom");
 
-insert into Developer values(00000006, "Fish Games");
+insert into Developer values(6, "Fish Games");
 
-insert into Developer values(00000007, "MICE");
+insert into Developer values(7, "MICE");
 
-insert into Developer values(00000008, "Deactivision");
+insert into Developer values(8, "Deactivision");
 
-insert into Developer values(00000009, "Mediocre Games");
+insert into Developer values(9, "Mediocre Games");
 
-insert into Game values(0000000, 59.00, 00000000, 12222222, "Connect 4");
+insert into Game values(, 59.00, 0, 12222222, "Connect 4");
 
-insert into Game values(0000001, 69.00, 00000000, 12222222, "Connect 5");
+insert into Game values(1, 69.00, 0, 12222222, "Connect 5");
 
-insert into Game values(0000002, 29.00, 00000001, 12222222, "Party In My Basement");
+insert into Game values(2, 29.00, 1, 12222222, "Party In My Basement");
 
-insert into Game values(0000003, 19.00, 00000002, 12222222, "Potato Ninja");
+insert into Game values(3, 19.00, 2, 12222222, "Potato Ninja");
 
-insert into Game values(0000004, 39.00, 00000003, 12222222, "Legends of League");
+insert into Game values(4, 39.00, 3, 12222222, "Legends of League");
 
-insert into Game values(0000005, 59.00, 00000004, 12222222, "The Lab");
+insert into Game values(5, 59.00, 4, 12222222, "The Lab");
 
-insert into Game values(0000006, 59.00, 00000004, 12222222, "The Potato");
+insert into Game values(6, 59.00, 4, 12222222, "The Potato");
 
-insert into Game values(0000007, 49.00, 00000006, 12222222, "Feed the Fish");
+insert into Game values(7, 49.00, 6, 12222222, "Feed the Fish");
 
-insert into Game values(0000008, 89.00, 00000007, 12222222, "Micefield 1");
+insert into Game values(8, 89.00, 7, 12222222, "Micefield 1");
 
-insert into Game values(0000009, 99.00, 00000008, 12222222, "Call of Potatoes");
+insert into Game values(9, 99.00, 8, 12222222, "Call of Potatoes");
 
-insert into Genre values(00000000, "MOBA");
+insert into Genre values(0, "MOBA");
 
-insert into Genre values(00000001, "FPS");
+insert into Genre values(1, "FPS");
 
-insert into Genre values(00000002, "VR");
+insert into Genre values(2, "VR");
 
-insert into Genre values(00000003, "Fun");
+insert into Genre values(3, "Fun");
 
-insert into Genre values(00000004, "RPG");
+insert into Genre values(4, "RPG");
 
-insert into Genre values(00000005, "Adventure");
+insert into Genre values(5, "Adventure");
 
-insert into Genre values(00000006, "Survival");
+insert into Genre values(6, "Survival");
 
-insert into Genre values(00000007, "Strategy");
+insert into Genre values(7, "Strategy");
 
-insert into Genre values(00000008, "Fantasy");
+insert into Genre values(8, "Fantasy");
 
-insert into Genre values(00000009, "Horror");
+insert into Genre values(9, "Horror");
 
-insert into Has values(00000000, 00000003);
+insert into Has values(0, 3);
 
-insert into Has values(00000000, 00000007);
+insert into Has values(0, 7);
 
-insert into Has values(00000001, 00000003);
+insert into Has values(1, 3);
 
-insert into Has values(00000001, 00000007);
+insert into Has values(1, 7);
 
-insert into Has values(00000002, 00000004);
+insert into Has values(2, 4);
 
-insert into Has values(00000002, 00000005);
+insert into Has values(2, 5);
 
-insert into Has values(00000002, 00000009);
+insert into Has values(2, 9);
 
-insert into Has values(00000003, 00000004);
+insert into Has values(3, 4);
 
-insert into Has values(00000003, 00000008);
+insert into Has values(3, 8);
 
-insert into Has values(00000004, 00000000);
+insert into Has values(4, 0);
 
-insert into Has values(00000004, 00000007);
+insert into Has values(4, 7);
 
-insert into Has values(00000005, 00000002);
+insert into Has values(5, 2);
 
-insert into Has values(00000005, 00000009);
+insert into Has values(5, 9);
 
-insert into Has values(00000006, 00000003);
+insert into Has values(6, 3);
 
-insert into Has values(00000007, 00000007);
+insert into Has values(7, 7);
 
-insert into Has values(00000008, 00000001);
+insert into Has values(8, 1);
 
-insert into Has values(00000008, 00000006);
+insert into Has values(8, 6);
 
-insert into Has values(00000008, 00000007);
+insert into Has values(8, 7);
 
-insert into Has values(00000009, 00000001);
+insert into Has values(9, 1);
 
-insert into Owns values(11111102, 00000000, 59.00, '2017-11-10');
+insert into Owns values(11111102, 0, 59.00, '2017-11-10');
 
-insert into Owns values(11111102, 00000001, 69.00, '2017-11-05');
+insert into Owns values(11111102, 1, 69.00, '2017-11-05');
 
-insert into Owns values(11111103, 00000000, 59.00, '2015-11-10');
+insert into Owns values(11111103, 0, 59.00, '2015-11-10');
 
-insert into Owns values(11111104, 00000003, 19.00, '2013-09-11');
+insert into Owns values(11111104, 3, 19.00, '2013-09-11');
 
-insert into Owns values(11111105, 00000006, 59.00, '2013-12-04');
+insert into Owns values(11111105, 6, 59.00, '2013-12-04');
 
-insert into Owns values(11111106, 00000005, 59.00, '2016-07-29');
+insert into Owns values(11111106, 5, 59.00, '2016-07-29');
 
-insert into Owns values(11111107, 00000009, 99.00, '2017-11-01');
+insert into Owns values(11111107, 9, 99.00, '2017-11-01');
 
-insert into Owns values(11111108, 00000006, 59.00, '2017-02-11');
+insert into Owns values(11111108, 6, 59.00, '2017-02-11');
 
-insert into Owns values(11111109, 00000007, 79.00, '2001-11-10');
+insert into Owns values(11111109, 7, 79.00, '2001-11-10');
 
-insert into Owns values(11111109, 00000009, 99.00, '2010-02-25');
+insert into Owns values(11111109, 9, 99.00, '2010-02-25');
 
-insert into DLC values(00000000, 00000004, "Summoner's Canyon", 19.00);
+insert into DLC values(0, 4, "Summoner's Canyon", 19.00);
 
-insert into DLC values(00000001, 00000002, "Alcohol Expansion", 19.00);
+insert into DLC values(1, 2, "Alcohol Expansion", 19.00);
 
-insert into DLC values(00000002, 00000005, "For Science!", 19.00);
+insert into DLC values(2, 5, "For Science!", 19.00);
 
-insert into DLC values(00000003, 00000008, "French Stuff", 19.00);
+insert into DLC values(3, 8, "French Stuff", 19.00);
 
-insert into DLC values(00000004, 00000004, "New Champinos", 19.00);
+insert into DLC values(4, 4, "New Champinos", 19.00);
 
-insert into DLC values(00000005, 00000009, "Tomatoes Invade", 19.00);
+insert into DLC values(5, 9, "Tomatoes Invade", 19.00);
 
-insert into DLC values(00000006, 00000008, "French Mice", 29.00);
+insert into DLC values(6, 8, "French Mice", 29.00);
 
-insert into DLC values(00000007, 00000006, "Free Stuff", 0.00);
+insert into DLC values(7, 6, "Free Stuff", 0.00);
 
-insert into DLC values(00000008, 00000003, "Tomato Ninja", 19.00);
+insert into DLC values(8, 3, "Tomato Ninja", 19.00);
 
-insert into DLC values(00000009, 00000008, "Russian Mice", 19.00);
+insert into DLC values(9, 8, "Russian Mice", 19.00);
 
-insert into Contains values(00000000, 00000000);
+insert into Contains values(0, 0);
 
-insert into Contains values(00000000, 00000001);
+insert into Contains values(0, 1);
 
-insert into Contains values(00000002, 00000009);
+insert into Contains values(2, 9);
 
-insert into Contains values(00000004, 00000000);
+insert into Contains values(4, 0);
 
-insert into Contains values(00000004, 00000001);
+insert into Contains values(4, 1);
 
-insert into Contains values(00000004, 00000004);
+insert into Contains values(4, 4);
 
-insert into Contains values(00000003, 00000002);
+insert into Contains values(3, 2);
 
-insert into Contains values(00000005, 00000002);
+insert into Contains values(5, 2);
 
-insert into Contains values(00000006, 00000003);
+insert into Contains values(6, 3);
 
-insert into Contains values(00000007, 00000002);
+insert into Contains values(7, 2);
 
-insert into Contains values(00000008, 00000004);
+insert into Contains values(8, 4);
 
-insert into Contains values(00000009, 00000007);
+insert into Contains values(9, 7);
 
 commit work;

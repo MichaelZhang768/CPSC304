@@ -39,6 +39,14 @@ create table Developer (
 developerName varchar(32) not null,
 PRIMARY KEY (developerName));
 
+create table Develops (
+developerName varchar(32) not null,
+gameId integer not null,
+dateOfPublish date not null,
+PRIMARY KEY (developerName, gameId),
+foreign key (developerName) references Developer(developerName),
+foreign key (gameId) references Game(gameId));
+
 create table Game (
 gameId integer not null,
 currentPrice float(16) not null,

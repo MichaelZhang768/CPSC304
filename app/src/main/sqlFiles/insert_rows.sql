@@ -208,6 +208,8 @@ insert into IsGenre values(8, "Fantasy");
 
 insert into IsGenre values(9, "Horror");
 
+insert into Owns values("username2", 0, 0.00, '2017-11-10');
+
 insert into Owns values("username12", 0, 59.00, '2017-11-10');
 
 insert into Owns values("username12", 1, 69.00, '2017-11-05');

@@ -1,108 +1,82 @@
-use cpsc304;
+use sql3205841;
 
-create table Store (
-storeId integer not null,
-PRIMARY KEY (storeId));
-
-create table User (
+create table Users (
 email varchar(30) not null,
-userId integer not null,
 password varchar(16) not null,
 username varchar(16) not null,
-PRIMARY KEY (userId));
+description varchar(16) not null,
+PRIMARY KEY (username));
 
 create table AdminUser (
-userId integer not null,
-PRIMARY KEY (userId),
-foreign key (userId) references User(userId));
+username varchar(16) not null,
+PRIMARY KEY (username),
+foreign key (username) references Users(username));
 
 create table RegularUser (
-userId integer not null,
-storeId integer not null,
+username varchar(16) not null,
 accountBalance float(32) not null,
-PRIMARY KEY (userId),
-foreign key (userId) references User(userId),
-foreign key (storeId) references Store(storeId));
+PRIMARY KEY (username),
+foreign key (username) references Users(username));
 
 create table Friend (
-userId1 integer not null,
-userId2 integer not null,
-PRIMARY KEY (userId1, userId2),
-foreign key (userId1) references User(userId),
-foreign key (userId2) references User(userId));
-
-create table Manages (
-userId1 integer not null,
-userId2 integer not null,
-PRIMARY KEY (userId1, userId2),
-foreign key (userId1) references AdminUser(userId),
-foreign key (userId2) references RegularUser(userId));
-
-create table Cart (
-cartId integer not null,
-totalCost float(16) not null,
-PRIMARY KEY (cartId));
+username1 varchar(16) not null,
+username2 varchar(16) not null,
+dateOfFriendship date not null,
+PRIMARY KEY (username1, username2),
+foreign key (username1) references Users(username),
+foreign key (username2) references Users(username));
 
 create table Payment (
-userId integer not null,
-cartId integer not null,
+username varchar(16) not null,
 paymentNumber integer not null,
 dateOfPayment date not null,
 cost float(16) not null,
 paymentMethod varchar(16) not null,
-PRIMARY KEY (userId, paymentNumber),
-foreign key (cartId) references Cart(cartId),
-foreign key (userId) references RegularUser(userId) ON DELETE CASCADE);
+PRIMARY KEY (username, paymentNumber),
+foreign key (username) references RegularUser(username));
 
 create table Developer (
-developerId integer not null,
 developerName varchar(32) not null,
-PRIMARY KEY (developerId));
+PRIMARY KEY (developerName));
 
 create table Game (
 gameId integer not null,
-totalCost float(16) not null,
-developerId integer not null,
-storeId integer not null,
+currentPrice float(16) not null,
+developerName varchar(32) not null,
 gameName varchar(32) not null,
 PRIMARY KEY (gameId),
-foreign key (developerId) references Developer(developerId),
-foreign key (storeId) references Store(storeId));
+foreign key (developerName) references Developer(developerName));
+
+create table Develops (
+developerName varchar(32) not null,
+gameId integer not null,
+dateOfPublish date not null,
+PRIMARY KEY (developerName, gameId),
+foreign key (developerName) references Developer(developerName),
+foreign key (gameId) references Game(gameId));
+
 
 create table DLC (
 dlcId integer not null,
 gameId integer not null,
-dlcName varchar(32) not null,
+dlcName varchar(16) not null,
 dlcPrice float(32) not null,
 PRIMARY KEY (dlcId, gameId),
 foreign key (gameId) references Game(gameId) ON DELETE CASCADE);
 
 create table Owns (
-userId integer not null,
+username varchar(16) not null,
 gameId integer not null,
 purchasePrice float(32) not null,
 dateOfPurchase date not null,
-PRIMARY KEY (userId, gameId),
-foreign key (userId) references User(userId),
+PRIMARY KEY (username, gameId),
+foreign key (username) references Users(username),
 foreign key (gameId) references Game(gameId));
 
-create table Contains (
-cartId integer not null,
-gameId integer,
-PRIMARY KEY (cartId, gameId),
-foreign key (cartId) references Cart(cartId),
-foreign key (gameId) references Game(gameId));
-
-create table Genre (
-genreId integer not null,
-genreName varchar(16) not null,
-PRIMARY KEY (genreId));
-
-create table Has (
+create table IsGenre (
 gameId integer not null,
-genreId integer not null,
-PRIMARY KEY (gameId, genreId),
-foreign key (gameId) references Game(gameId),
-foreign key (genreId) references Genre(genreId));
+genreName varchar(16) not null,
+PRIMARY KEY (genreName),
+foreign key (gameId) references Game(gameId));
 
 commit;

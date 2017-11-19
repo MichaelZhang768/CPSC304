@@ -1,9 +1,11 @@
-package ubc.cpsc304;
+package ubc.cpsc304.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import ubc.cpsc304.R;
 
 public class MainActivity extends AppCompatActivity {
 

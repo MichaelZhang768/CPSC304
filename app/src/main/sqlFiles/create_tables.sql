@@ -4,6 +4,7 @@ create table User (
 email varchar(30) not null,
 password varchar(16) not null,
 username varchar(16) not null,
+description varchar(16) not null,
 PRIMARY KEY (username));
 
 create table AdminUser (

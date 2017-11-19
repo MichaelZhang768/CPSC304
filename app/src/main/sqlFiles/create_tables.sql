@@ -42,7 +42,7 @@ PRIMARY KEY (developerId));
 
 create table Game (
 gameId integer not null,
-totalCost float(16) not null,
+currentPrice float(16) not null,
 developerId integer not null,
 gameName varchar(32) not null,
 PRIMARY KEY (gameId),

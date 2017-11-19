@@ -150,6 +150,26 @@ insert into Developer values("Deactivision");
 
 insert into Developer values("Mediocre Games");
 
+insert into Develops values("Electronic Smarts", 0000000, '2017-01-09');
+
+insert into Develops values("Electronic Smarts", 0000001, '2017-01-09');
+
+insert into Develops values("Many Thinking Apes", 0000002, '2017-02-09');
+
+insert into Develops values("Macrosoft Studios", 0000003, '2017-03-09');
+
+insert into Develops values("Rito Games", 0000004, '2017-04-09');
+
+insert into Develops values("Valve", 0000005, '2017-05-09');
+
+insert into Develops values("Valve", 0000006, '2017-06-09');
+
+insert into Develops values("Fish Games", 0000007, '2017-07-09');
+
+insert into Develops values("MICE", 0000008, '2017-05-09');
+
+insert into Develops values("Deactivision", 0000009, '2017-01-09');
+
 insert into Game values(0000000, 59.00, "Electronic Smarts", "Connect 4");
 
 insert into Game values(0000001, 69.00, "Electronic Smarts", "Connect 5");

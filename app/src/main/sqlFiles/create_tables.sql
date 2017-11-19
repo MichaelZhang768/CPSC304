@@ -36,23 +36,22 @@ PRIMARY KEY (username, paymentNumber),
 foreign key (username) references RegularUser(username));
 
 create table Developer (
-developerId integer not null,
 developerName varchar(32) not null,
-PRIMARY KEY (developerId));
+PRIMARY KEY (developerName));
 
 create table Game (
 gameId integer not null,
 currentPrice float(16) not null,
-developerId integer not null,
+developerName varchar(32) not null,
 gameName varchar(32) not null,
 PRIMARY KEY (gameId),
 foreign key (developerId) references Developer(developerId));
 
 create table DLC (
+dlcName varchar(16) not null,
 dlcId integer not null,
-gameId integer not null,
-dlcName varchar(32) not null,
 dlcPrice float(32) not null,
+gameId integer not null,
 PRIMARY KEY (dlcId, gameId),
 foreign key (gameId) references Game(gameId) ON DELETE CASCADE);
 
@@ -65,15 +64,10 @@ PRIMARY KEY (username, gameId),
 foreign key (username) references User(username),
 foreign key (gameId) references Game(gameId));
 
-create table Genre (
-genreName varchar(16) not null,
-PRIMARY KEY (genreName));
-
-create table Has (
+create table IsGenre (
 gameId integer not null,
 genreName varchar(16) not null,
-PRIMARY KEY (gameId, genreName),
-foreign key (gameId) references Game(gameId),
-foreign key (genreName) references Genre(genreName));
+PRIMARY KEY (genreName))
+foreign key (gameId) references Game(gameId));
 
 commit;

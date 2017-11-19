@@ -11,7 +11,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,30 +18,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".activities.SignInActivity"
-                  android:parentActivityName=".activities.MainActivity"
-                  android:label="Sign In">
+        <activity
+            android:name=".activities.SignInActivity"
+            android:label="Sign In"
+            android:parentActivityName=".activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
         </activity>
-
-        <activity android:name=".activities.SignUpActivity"
-                  android:parentActivityName=".activities.MainActivity"
-                  android:label="Sign Up">
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:label="Sign Up"
+            android:parentActivityName=".activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activities.MainActivity" />
         </activity>
-
-        <activity android:name=".activities.RegularDashboardActivity"
-                  android:label="Dashboard">
-        </activity>
-
-        <activity android:name=".activities.AllGamesActivity"
-                  android:label="All Games">
-        </activity>
+        <activity
+            android:name=".activities.RegularDashboardActivity"
+            android:label="Dashboard" />
+        <activity
+            android:name=".activities.AllGamesActivity"
+            android:label="All Games" />
+        <activity
+            android:name=".activities.AdminDashboardActivity"
+            android:label="@string/title_activity_admin_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

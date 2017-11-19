@@ -31,10 +31,14 @@ public class RegularDashboardActivity extends AppCompatActivity {
     private void getRegularUserProfile() {
         TextView usernameTextView = (TextView) findViewById(R.id.usernameTextView);
         TextView balanceTextView = (TextView) findViewById(R.id.balanceTextView);
+        TextView emailTextView = (TextView) findViewById(R.id.emailTextView);
+        TextView descriptionTextView = (TextView) findViewById(R.id.descriptionTextView);
 
-        // TODO: SQL query to get username and balance
+        // TODO: SQL query to get username, balance, email, and description
         usernameTextView.setText("Username: " + "");
         balanceTextView.setText("Account Balance: " + "");
+        emailTextView.setText("Email: " + "");
+        descriptionTextView.setText("Description: " + "");
     }
 
     private void addBalance() {

@@ -26,7 +26,6 @@ PRIMARY KEY (username1, username2),
 foreign key (username1) references User(username),
 foreign key (username2) references User(username));
 
-
 create table Payment (
 username varchar(16) not null,
 paymentNumber integer not null,
@@ -49,10 +48,10 @@ PRIMARY KEY (gameId),
 foreign key (developerId) references Developer(developerId));
 
 create table DLC (
-dlcName varchar(16) not null,
 dlcId integer not null,
-dlcPrice float(32) not null,
 gameId integer not null,
+dlcName varchar(16) not null,
+dlcPrice float(32) not null,
 PRIMARY KEY (dlcId, gameId),
 foreign key (gameId) references Game(gameId) ON DELETE CASCADE);
 

@@ -74,4 +74,11 @@ public class User {
         return jsonObject.get("username").equals(username)
                 && jsonObject.get("password").equals(password);
     }
+
+    public static JSONArray getAllFriends(String username, Context context) throws  InterruptedException, ExecutionException, JSONException {
+        String url = "localhost:3000/" + username + "/friends";
+        HttpGetRequest getAllFriends = new HttpGetRequest(url, context);
+        String response = getAllFriends.execute().get();
+        return new JSONArray(response);
+    }
 }

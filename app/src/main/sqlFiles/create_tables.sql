@@ -37,7 +37,8 @@ foreign key (username) references RegularUser(username));
 
 create table Developer (
 developerName varchar(32) not null,
-PRIMARY KEY (developerName));
+PRIMARY KEY (developerName)
+foreign key (developerName) references Users(username));
 
 create table Game (
 gameId integer not null,

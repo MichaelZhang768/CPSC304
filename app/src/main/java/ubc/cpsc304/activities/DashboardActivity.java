@@ -1,6 +1,5 @@
 package ubc.cpsc304.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -20,14 +19,14 @@ import ubc.cpsc304.R;
 import ubc.cpsc304.rest.HttpGetRequest;
 import ubc.cpsc304.rest.HttpPostRequest;
 
-public class RegularDashboardActivity extends AppCompatActivity {
+public class DashboardActivity extends AppCompatActivity {
 
     String username = ((MyApplication) getApplicationContext()).getUsername();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_regular_dashboard);
+        setContentView(R.layout.activity_dashboard);
 
         try {
             getRegularUserProfile();
@@ -65,8 +64,8 @@ public class RegularDashboardActivity extends AppCompatActivity {
             }
         });
 
-        Button showGamesButton = (Button) findViewById(R.id.showOwnedGamesButton);
-        showGamesButton.setOnClickListener(new View.OnClickListener() {
+        Button showOwnedGamesButton = (Button) findViewById(R.id.showOwnedGamesButton);
+        showOwnedGamesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // TODO
@@ -82,6 +81,36 @@ public class RegularDashboardActivity extends AppCompatActivity {
                 // TODO
                 // Intent intent = new Intent(this, );
                 // startActivity(intent);
+            }
+        });
+
+        Button showAllGamesButton = (Button) findViewById(R.id.allGamesButton);
+        showAllGamesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO
+                // Intent intent = new Intent(this, );
+                // startActivity(intent);
+            }
+        });
+
+        Button showAllUsersButton = (Button) findViewById(R.id.showAllUsersButton);
+        showAllUsersButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO
+//                Intent intent = new Intent(getApplicationContext(), );
+//                startActivity(intent);
+            }
+        });
+
+        Button publishGameButton = (Button) findViewById(R.id.publishButton);
+        publishGameButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO
+//                Intent intent = new Intent(getApplicationContext(), );
+//                startActivity(intent);
             }
         });
     }

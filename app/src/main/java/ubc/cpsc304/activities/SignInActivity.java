@@ -38,7 +38,7 @@ public class SignInActivity extends AppCompatActivity {
                 MyApplication myApplication = (MyApplication) getApplicationContext();
                 myApplication.setUsername(usernameString);
 
-                Intent intent = new Intent(this, RegularDashboardActivity.class);
+                Intent intent = new Intent(this, DashboardActivity.class);
                 startActivity(intent);
 
                 showSuccessToast();

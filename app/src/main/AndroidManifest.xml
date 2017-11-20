@@ -35,16 +35,11 @@
                 android:value=".activities.MainActivity" />
         </activity>
         <activity
-            android:name=".activities.RegularDashboardActivity"
+            android:name=".activities.DashboardActivity"
             android:label="Dashboard" />
         <activity
             android:name=".activities.AllGamesActivity"
             android:label="All Games" />
-        <activity
-            android:name=".activities.AdminDashboardActivity"
-            android:label="@string/title_activity_admin_dashboard"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activities.DeveloperDashboardActivity"></activity>
     </application>
 
 </manifest>

@@ -5,12 +5,15 @@
               android:layout_height="match_parent">
 
     <TextView
-        android:text="Regular User"
+        android:id="@+id/titleTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/titleTextView"
-        android:textSize="24sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:gravity="center_horizontal"
+        android:text="User"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <TextView
@@ -44,16 +47,17 @@
         android:layout_alignParentStart="true" />
 
     <EditText
+        android:id="@+id/amountToAddEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/amountToAddEditText"
-        android:textSize="18sp"
-        android:numeric="decimal"
+        android:layout_alignBottom="@+id/amountToAddTextView"
         android:layout_below="@+id/addBalanceTextView"
+        android:layout_toEndOf="@+id/amountToAddTextView"
         android:layout_toRightOf="@+id/amountToAddTextView"
-        android:layout_toEndOf="@+id/amountToAddTextView" />
+        android:ems="10"
+        android:inputType="number"
+        android:numeric="decimal"
+        android:textSize="18sp" />
 
     <Button
         android:text="Ok"
@@ -102,16 +106,16 @@
         android:textSize="18sp" />
 
     <Button
-        android:text="Show Friends"
-        android:layout_marginTop="19dp"
         android:id="@+id/friendsButton"
-        android:textSize="12sp"
-        android:layout_below="@+id/descriptionTextView"
-        android:layout_toLeftOf="@+id/addBalanceButton"
-        android:layout_toStartOf="@+id/addBalanceButton"
-        android:layout_width="50dp"
+        android:layout_width="75dp"
         android:layout_height="50dp"
-        android:background="@android:color/holo_blue_bright" />
+        android:layout_alignEnd="@+id/emailTextView"
+        android:layout_alignRight="@+id/emailTextView"
+        android:layout_below="@+id/descriptionTextView"
+        android:layout_marginTop="19dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Show Friends"
+        android:textSize="12sp" />
 
     <Button
         android:text="Show Owned Games"
@@ -134,4 +138,39 @@
         android:layout_width="75dp"
         android:background="@android:color/holo_blue_bright" />
 
+    <Button
+        android:id="@+id/showAllUsersButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/recommendedGamesButton"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/recommendedGamesButton"
+        android:layout_toRightOf="@+id/recommendedGamesButton"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Show Users"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/publishButton"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/titleTextView"
+        android:layout_alignRight="@+id/titleTextView"
+        android:layout_alignTop="@+id/friendsButton"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Publish Game"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/allGamesButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/emailTextView"
+        android:layout_alignBottom="@+id/emailTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Show All Games"
+        android:textSize="12sp" />
 </RelativeLayout>

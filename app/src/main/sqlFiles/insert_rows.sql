@@ -38,6 +38,26 @@ insert into Users values("user19@gmail.com", "password19", "username19", "N/A");
 
 insert into Users values("user20@gmail.com", "password20", "username20", "N/A");
 
+insert into Users values("ManyThinkingApes@gmail.com", "pass1", "Many Thinking Apes", "N/A");
+
+insert into Users values("MacrosoftStudios@gmail.com", "pass2", "Macrosoft Studios", "N/A");
+
+insert into Users values("RitoGames@gmail.com", "pass3", "Rito Games", "N/A");
+
+insert into Users values("Valve@gmail.com", "pass4", "Valve", "N/A");
+
+insert into Users values("Hatcom@gmail.com", "pass5", "Hatcom", "N/A");
+
+insert into Users values("FishGames@gmail.com", "pass6", "Fish Games", "N/A");
+
+insert into Users values("MICE@gmail.com", "pass7", "MICE", "N/A");
+
+insert into Users values("Deactivision@gmail.com", "pass8", "Deactivision", "N/A");
+
+insert into Users values("MediocreGames@gmail.com", "pass9", "Mediocre Games", "N/A");
+
+insert into Users values("ElectronicSmarts@gmail.com", "pass10", "Electronic Smarts", "N/A");
+
 insert into AdminUser values("username1");
 
 insert into AdminUser values("username2");
@@ -128,8 +148,6 @@ insert into Payment values("username17", 7, '2017-10-23', 29.00, "Credit Card");
 
 insert into Payment values("username12", 1, '2017-09-09', 0.00, "Instant Noodles");
 
-insert into Developer values("Electronic Smarts");
-
 insert into Developer values("Many Thinking Apes");
 
 insert into Developer values("Macrosoft Studios");
@@ -147,6 +165,8 @@ insert into Developer values("MICE");
 insert into Developer values("Deactivision");
 
 insert into Developer values("Mediocre Games");
+
+insert into Developer values("Electronic Smarts");
 
 insert into Game values(0, 59.00, "Electronic Smarts", "Connect 4");
 

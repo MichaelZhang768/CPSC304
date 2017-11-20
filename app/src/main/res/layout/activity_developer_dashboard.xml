@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_admin_dashboard"
+    android:id="@+id/activity_developer_dashboard"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ubc.cpsc304.activities.AdminDashboardActivity">
+    tools:context="ubc.cpsc304.activities.DeveloperDashboardActivity">
 
     <TextView
-        android:text="Admin User"
+        android:text="Developer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/titleTextView"
@@ -48,27 +48,15 @@
 
     <Button
         android:text="Show Friends"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="13dp"
         android:id="@+id/friendsButton"
         android:textSize="12sp"
-        android:layout_below="@+id/descriptionTextView"
-        android:layout_toLeftOf="@+id/addBalanceButton"
-        android:layout_toStartOf="@+id/addBalanceButton"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@android:color/holo_blue_bright" />
-
-    <Button
-        android:text="Show Owned Games"
-        android:layout_height="50dp"
-        android:id="@+id/showOwnedGamesButton"
-        android:layout_width="50dp"
-        android:textSize="12sp"
         android:background="@android:color/holo_blue_bright"
-        android:layout_alignBaseline="@+id/friendsButton"
-        android:layout_alignBottom="@+id/friendsButton"
-        android:layout_toRightOf="@+id/descriptionTextView"
-        android:layout_toEndOf="@+id/descriptionTextView" />
+        android:layout_below="@+id/descriptionTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="Show Users"
@@ -77,8 +65,18 @@
         android:layout_width="50dp"
         android:textSize="12sp"
         android:background="@android:color/holo_blue_bright"
-        android:layout_alignBaseline="@+id/showOwnedGamesButton"
-        android:layout_alignBottom="@+id/showOwnedGamesButton"
-        android:layout_alignRight="@+id/titleTextView"
-        android:layout_alignEnd="@+id/titleTextView" />
+        android:layout_alignBaseline="@+id/friendsButton"
+        android:layout_alignBottom="@+id/friendsButton"
+        android:layout_toRightOf="@+id/usernameTextView"
+        android:layout_toEndOf="@+id/usernameTextView" />
+
+    <Button
+        android:text="Publish Game"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/publishButton"
+        android:textSize="14sp"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_alignTop="@+id/showAllUsersButton"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

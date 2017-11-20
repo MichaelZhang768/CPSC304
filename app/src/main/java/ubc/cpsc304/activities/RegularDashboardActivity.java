@@ -24,7 +24,6 @@ public class RegularDashboardActivity extends AppCompatActivity {
 
     String username = ((MyApplication) getApplicationContext()).getUsername();
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

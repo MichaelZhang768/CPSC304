@@ -44,6 +44,7 @@
             android:name=".activities.AdminDashboardActivity"
             android:label="@string/title_activity_admin_dashboard"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.DeveloperDashboardActivity"></activity>
     </application>
 
 </manifest>
